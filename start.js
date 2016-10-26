@@ -5,8 +5,8 @@ var TX_RUNS_AS_HTTPS = "CaDS INFO: Runs as HTTPS ";
 console.info("CaDS INFO: Start the default system");
 // CONFIG
 var config = require("./server_config.json");
-var helper = require("./helper/helper");
-var callbacks = require("./helper/callbacks");
+var helper = require("./helper/CaDShelper");
+var callbacks = require("./helper/APPcallbacks");
 
 var serverIP = config.server.ip || "0.0.0.0";
 var serverPort = config.server.port || 8080;
@@ -21,7 +21,7 @@ if(!useExpress){
 else{
   var express = require('express');
   app = express();
-  // for the callbacks look in ./helper/callbacks
+  // for the callbacks look in ./helper/Appcallbacks
   callbacks.registercallbacks(app);
 }
 
