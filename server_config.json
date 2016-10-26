@@ -1,8 +1,9 @@
 {
-  "https": false,
-  "express": true,
+  "https":    false,
+  "express":  true,
+  "ws":       true,
   "server": {
-    "ip": "0.0.0.0",
+    "ip":   "0.0.0.0",
     "port": 8080
   }
 }

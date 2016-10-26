@@ -17,6 +17,7 @@
   },
     "dependencies": {
     "express": "latest",
+    "websocket": "latest",
     "mongoose": "latest"
   },
   "homepage": "https://github.com/Transport-Protocol/CaDS-JS-Playground#readme"

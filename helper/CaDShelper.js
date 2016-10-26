@@ -1,15 +1,12 @@
-var TX_SERVER_RUN   = "CaDS INFO: Server running";
-var TX_CREATE_SERV  = "CaDS INFO: Create Server";
+var TX_INFO_SERVER_RUN   = "Server running ";
+var TX_INFO_CREATE_SERV  = "Create Server ";
+var TX_INFO_CADS_HELPER  = "[INFO CaDS][HELPER] "
 
 module.exports = {
-  // log helper 
-  logServerRunning: function (h){
-    console.log(TX_SERVER_RUN);
-  },
-  
+
   createHttpServer: function (isHTTPS) {
     // create the setup
-    console.info(TX_CREATE_SERV); 
+    console.info(TX_INFO_CADS_HELPER + TX_INFO_CREATE_SERV); 
  
     var http, httpd;
     var listener = require("./HTTPlistener");
@@ -18,8 +15,8 @@ module.exports = {
       http = require("http"); 
       // Create the server
       httpd = http.createServer(listener.httpListener);
-      }
-      else{
+    }
+    else{
       http = require("https");
       
       // Need also some crypto stuff
@@ -29,7 +26,7 @@ module.exports = {
       $ openssl genrsa -out key.pem
       $ openssl req -new -key key.pem -out csr.pem
       $ openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
-      rm csr.pem
+      $ rm csr.pem
       */
       var options = {
         key: fs.readFileSync('key.pem'),
