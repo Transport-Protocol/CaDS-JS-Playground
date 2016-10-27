@@ -1,6 +1,6 @@
+var TX_INFO_CADS_HELPER  = "[INFO CaDS][HELPER] "
 var TX_INFO_SERVER_RUN   = "Server running ";
 var TX_INFO_CREATE_SERV  = "Create Server ";
-var TX_INFO_CADS_HELPER  = "[INFO CaDS][HELPER] "
 
 module.exports = {
 

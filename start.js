@@ -1,15 +1,13 @@
 // JavaScript File
-var TX_INFO_ACTIVATED = "activated "
+var TX_INFO_CADS      = "[INFO CaDS][START] "
 var TX_INFO_EXPRESS   = "Modul EXPESS "
 var TX_INFO_HTTP      = "Modul HTTP "
 var TX_INFO_WEBSOCKET = "Modul WEBSOCKETS "
-var TX_INFO_CADS      = "[INFO CaDS] "
-var TX_INFO_START     = "Start... "
+var TX_INFO_ACTIVATED = "activated "
+var TX_INFO_START     = "PLAYGROUND... "
 
 ///////////// Conf Service /////////////
 /* Lets start to create a new world*/
-console.info(TX_INFO_CADS + TX_INFO_START);
-// CONFIG
 var config      = require("./server_config.json");
 var helper      = require("./helper/CaDShelper");
 var callbacks   = require("./helper/APPcallbacks");
@@ -22,6 +20,7 @@ var useWebSocket= config.ws      || false;
 
 /////////////// Modul App ///////////////
 /* Lets create the app server */
+console.info(TX_INFO_CADS + TX_INFO_START);
 var service; // lets see what we can do
 if(!useExpress){
   // web-server with http
