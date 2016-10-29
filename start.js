@@ -9,14 +9,15 @@ var TX_INFO_START     = "PLAYGROUND... "
 ///////////// Conf Service /////////////
 /* Lets start to create a new world*/
 var config      = require("./server_config.json");
-var helper      = require("./helper/CaDShelper");
-var callbacks   = require("./helper/APPcallbacks");
+var helper      = require("./lib/CaDShelper");
+var callbacks   = require("./lib/APPcallbacks");
 
 var serverIP    = config.server.ip   || "0.0.0.0";
 var serverPort  = config.server.port || 8080;
 var isHTTPS     = config.https   || false;
 var useExpress  = config.express || false;
 var useWebSocket= config.ws      || false;
+
 
 /////////////// Modul App ///////////////
 /* Lets create the app server */
@@ -30,7 +31,7 @@ if(!useExpress){
 else{
   // application server with express
   console.info(TX_INFO_CADS + TX_INFO_EXPRESS + TX_INFO_ACTIVATED);
-  service = callbacks.createApplicationServer();
+  service = callbacks.createApplicationServer(config);
 }
 ///////////////  Modul WS ///////////////
 /* Lets do some WebSockets*/
