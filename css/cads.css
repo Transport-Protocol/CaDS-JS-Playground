@@ -29,7 +29,7 @@
 body
 {
 	position: relative;
-	min-width: 400px;
+	min-width: 250px;
 
 	font-family: __Roboto_5, Arial, Helvetica Neue, Helvetica, sans-serif;
 	text-align: left;
@@ -185,10 +185,17 @@ a.nontext /* used to override default properties of 'a' tag */
 .hide_footer {
     display: none !important;
 }
+
 .footer_bold {
     font-weight: bold;
+	font-family: '__Roboto_5';	
 }
 
+.header_bold
+{
+	font-family: '__Roboto_5';
+	font-weight: bold;
+}
 .cads_flie-text
 {
 	font-family: '__Roboto_5';
@@ -217,7 +224,7 @@ a.nontext /* used to override default properties of 'a' tag */
 }
 .cads_bodybild
 {
-	min-width: 400px;
+	min-width: 300px;
 	max-height: 350px; 
    	margin-top:+2%; 
    	margin-bottom:10px;
@@ -227,9 +234,11 @@ a.nontext /* used to override default properties of 'a' tag */
 }
 .cads_bodytext
 {
-   max-width: 600px;
+   max-width: 800px;
 
    margin-bottom:160px; 
+   padding-top: 40px;
+	
    font-family: '__Roboto_5';
 }
 .cads_headline
@@ -248,7 +257,18 @@ a.nontext /* used to override default properties of 'a' tag */
 	font-size: 20px;
 	font-weight: bold;
 }
-.verticalspacer
+
+.cads_twitter_frame_space
+{
+	min-width: 220;
+	width: 220px;
+}
+.verticalspace
 {
 	clear: both;
+}
+
+#toggle_footer
+{
+	z-index:1000000;
 }

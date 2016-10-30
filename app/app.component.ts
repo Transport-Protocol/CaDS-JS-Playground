@@ -19,4 +19,10 @@ export class AppComponent {
     console.log("======= CaDS Component START ========");
   };
 
+  
+  ngOnInit(): void {
+    /* global callTheTwitterFunction*/
+    callTheTwitterFunction();
+    console.log("page loading completed");
+  }
 }
