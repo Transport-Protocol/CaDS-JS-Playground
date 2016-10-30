@@ -3,7 +3,7 @@
 {
 	font-family: '__Roboto_5';
 	src: url('fonts/roboto-bold-webfont.eot');
-	src: local('☺'), url('fonts/roboto-bold-webfont.woff') format('woff'), url('../fonts/roboto-bold-webfont.svg') format('svg');
+	src: local('☺'), url('../fonts/roboto-bold-webfont.woff') format('woff'), url('../fonts/roboto-bold-webfont.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -12,7 +12,7 @@
 {
 	font-family: '__Roboto Condensed_3';
 	src: url('fonts/robotocondensed-bold-webfont.eot');
-	src: local('☺'), url('fonts/robotocondensed-bold-webfont.woff') format('woff'), url('../fonts/robotocondensed-bold-webfont.svg') format('svg');
+	src: local('☺'), url('../fonts/robotocondensed-bold-webfont.woff') format('woff'), url('../fonts/robotocondensed-bold-webfont.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -21,7 +21,7 @@
 {
 	font-family: '__Roboto_5';
 	src: url('fonts/roboto-light-webfont.eot');
-	src: local('☺'), url('fonts/roboto-light-webfont.woff') format('woff'), url('../fonts/roboto-light-webfont.svg') format('svg');
+	src: local('☺'), url('../fonts/roboto-light-webfont.woff') format('woff'), url('../fonts/roboto-light-webfont.svg') format('svg');
 	font-weight: 300;
 	font-style: normal;
 }
