@@ -1,0 +1,169 @@
+
+@font-face
+{
+	font-family: '__Roboto_5';
+	src: url('http://scimbe.de/fonts/roboto-bold-webfont.eot');
+	src: local('☺'), url('http://scimbe.de/fonts/roboto-bold-webfont.woff') format('woff'), url('../fonts/roboto-bold-webfont.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: '__Roboto Condensed_3';
+	src: url('http://scimbe.de/fonts/robotocondensed-bold-webfont.eot');
+	src: local('☺'), url('http://scimbe.de/fonts/robotocondensed-bold-webfont.woff') format('woff'), url('../fonts/robotocondensed-bold-webfont.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: '__Roboto_5';
+	src: url('http://scimbe.de/fonts/roboto-light-webfont.eot');
+	src: local('☺'), url('http://scimbe.de/fonts/roboto-light-webfont.woff') format('woff'), url('../fonts/roboto-light-webfont.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+body
+{
+	position: relative;
+	min-width: 960px;
+
+	font-family: __Roboto_5, Arial, Helvetica Neue, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 14px;
+	line-height: 17px;
+	word-wrap: break-word;
+	text-rendering: optimizeLegibility;/* kerning, primarily */
+}
+html
+{
+	min-height: 100%;
+	min-width: 100%;
+	-ms-text-size-adjust: none;
+}
+
+body,div,dl,dt,dd,ul,ol,li,nav,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,a
+{
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	-webkit-transform-origin: left top;
+	-ms-transform-origin: left top;
+	-o-transform-origin: left top;
+	transform-origin: left top;
+}
+
+a:link
+{
+	color: #9EB247;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #7B8942;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	color: #9EB247;
+	text-decoration: underline;
+}
+
+a:active
+{
+	color: #204C86;
+	text-decoration: underline;
+}
+
+a.nontext /* used to override default properties of 'a' tag */
+{
+	color: black;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: normal;
+}
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px; /* or 950px */
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #FFFFFF;
+    border-color: #E7E7E7;
+    margin-top:100px;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+    margin-top:-80px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #204C86;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #9EB247;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #9EB247;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+
+
+.footer_contact_menu
+{
+    /* margin-bottom: 100px;*/
+    float:right;
+    position: relative;
+    top: -40px;
+}
+
+.footer_contact_me
+{
+    /* margin-bottom: 100px;*/
+    text-align:center;
+    color: #FFFFFF;
+}
+.footer_contact_me a:link{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.footer_text
+{
+ 	background-color: #204C86;   
+    color: #FFFFFF;
+}
+
+
+.hide_footer {
+    display: none !important;
+}
+.footer_bold {
+    font-weight: bold;
+}
