@@ -8,11 +8,12 @@ import { OnInit }        from '@angular/core';
 import {Header} from './d.header';
 // footer 
 import {Footer} from './d.footer';
- 
+ // Welcome 
+import {Welcome} from './d.welcome';
 
 @NgModule({
   imports: [ BrowserModule ],
-  declarations: [ AppComponent, Header, Footer  ],
+  declarations: [ AppComponent, Header, Footer, Welcome  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule implements OnInit { 
