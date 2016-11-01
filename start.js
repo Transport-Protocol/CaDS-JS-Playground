@@ -11,13 +11,14 @@ var TX_INFO_START     = "PLAYGROUND... "
 var config      = require("./server_config.json");
 var helper      = require("./lib/CaDShelper");
 var callbacks   = require("./lib/APPcallbacks");
+var spdy        = require("./lib/Spdy");
 
 var serverIP    = config.server.ip   || "0.0.0.0";
 var serverPort  = config.server.port || 8080;
 var isHTTPS     = config.https   || false;
 var useExpress  = config.express || false;
 var useWebSocket= config.ws      || false;
-
+var useHttp2    = config.http2   || false;
 
 /////////////// Modul App ///////////////
 /* Lets create the app server */
@@ -43,5 +44,9 @@ if(useWebSocket){
 
 /////////////// Start Magic ///////////////
 // Set Port - In the first step we use process.env.PORT or 8080
-service.listen(process.env.PORT || serverPort, process.env.IP || serverIP,null);
-
+if(!useHttp2){
+  service.listen(process.env.PORT || serverPort, process.env.IP || serverIP,null);
+}
+else{
+  spdy.runAsHTTP2(service,process.env.PORT || serverPort);
+}

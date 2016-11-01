@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-header',
+  selector: 'cads-header',
   templateUrl: '../templates/cads_header.html'
 })
 

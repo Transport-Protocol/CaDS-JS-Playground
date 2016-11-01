@@ -6,6 +6,7 @@
   "scripts": {
     "test": "tsc && concurrently \"tsc -w\" \"node start.js\" ",
     "start": "tsc && concurrently \"tsc -w\" \"node start.js\" ",
+    "prepare": "tsd install angular2/angular2 angular2/router rx es6-promise",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
@@ -19,7 +20,7 @@
     "url": "https://github.com/Transport-Protocol/CaDS-JS-Playground/issues"
   },
   "dependencies": {
-     "@angular/common": "~2.1.1",
+    "@angular/common": "~2.1.1",
     "@angular/compiler": "~2.1.1",
     "@angular/core": "~2.1.1",
     "@angular/forms": "~2.1.1",
@@ -38,15 +39,20 @@
     "ngtweet": "0.6.1",
     
     "express": "latest",
+    "spdy": "latest",
     "websocket": "latest",
     "mongoose": "latest"
   },
    "devDependencies": {
+    "tsd":  "latest",
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
     "typescript": "^2.0.3"
+  },
+    "ambientDependencies": {
+    "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"
   },
   "homepage": "https://github.com/Transport-Protocol/CaDS-JS-Playground#readme"
 }

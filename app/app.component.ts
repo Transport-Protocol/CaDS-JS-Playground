@@ -1,28 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, NgZone, EventEmitter, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'my-app',
   template: `
-        <my-header></my-header>
-        <my-welcome></my-welcome>
-        <my-footer></my-footer>
+        <base href="/">
+        <cads-header></cads-header>
+        <router-outlet></router-outlet>
+        <cads-footer></cads-footer>
     `,
 })
 
 
-export class AppComponent {
+export class AppComponent  implements OnInit  {
   name: string;
   title     = 'CaDS Playground';
   page_name = 'home';
-  
-  constructor() {
+  zone: NgZone;
+   
+  constructor(private _ngZone: NgZone) {
+    this.zone = _ngZone;
     console.log("======= CaDS Component START ========");
   };
 
   
   ngOnInit(): void {
+
     /* global callTheTwitterFunction*/
-    callTheTwitterFunction();
+     this.zone.runOutsideAngular(() => {
+           //  callTheTwitterFunction();
+    });
     console.log("page loading completed");
   }
 }

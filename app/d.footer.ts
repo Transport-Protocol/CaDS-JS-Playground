@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-footer',
+  selector: 'cads-footer',
   templateUrl: '../templates/cads_footer.html'
 })
 
