@@ -1,5 +1,5 @@
 {
-  "http2":    true,
+  "http2":    false,
   "https":    false,
   "express":  true,
   "ws":       true,

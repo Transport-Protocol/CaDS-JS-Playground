@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>CaDS Measurement Portal II</title>
+     <link rel="shortcut icon" href="images/favicon.ico"/>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, minimum-scale=1, user-scalable=no">
+<!-- Bootstrap --> 
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!-- Angular -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+    
+<!-- Twitter -->
+  <script src="node_modules/ngtweet/dist/ngtweet.min.js"></script>
+
+    
+<!-- CaDS Style -->
+    <link rel="stylesheet" href="css/cads.css">
+    <script src="js/workaround.js"></script>
+</head>
+<body>
+    <center>
+    <br/>
+    <br/>
+    <img class="block" id="u81_img" src="../images/becke_vorlaeufiges_logo.png" alt="" width="224" height="106"/> 
+    <br/>
+    <br/>
+    <br/>
+    </center>
+    <my-app> <center>Loading app...  </center></my-app>
+  
+</body>
+</html>
