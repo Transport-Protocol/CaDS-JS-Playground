@@ -11,6 +11,8 @@ import { Header } from './d.header';
 // footer 
 import { Footer } from './d.footer';
 
+// TGAS
+import {  CADS_TAG_MENU_ENTRY_SITE }  from './tag.menu_entry_site';
 
 // Output
 import {  CADS_Welcome }              from './d.welcome';
@@ -38,7 +40,7 @@ import {  CADS_Impressum }            from './d.impressum';
     ],
   declarations: [ AppComponent, Header, Footer, CADS_Welcome, CADS_About, 
                   CADS_Projects, CADS_Publication, CADS_ForStudents, 
-                  CADS_FindCads, CADS_Impressum ],
+                  CADS_FindCads, CADS_Impressum, CADS_TAG_MENU_ENTRY_SITE ],
   bootstrap:    [ AppComponent ]
 })
 
