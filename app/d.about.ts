@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: '../templates/cads_about.html'
 })
 
-export class CADS_About { }
+export class CADS_About implements OnInit{
+  
+  ngOnInit() {
+    console.log("= About Page loaded... =");
+  }
+}

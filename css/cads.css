@@ -1,7 +1,6 @@
-
-
 body
 {
+	overflow-x:hidden;
 	position: relative;
 	min-width: 200px;
 
@@ -75,6 +74,7 @@ a.nontext /* used to override default properties of 'a' tag */
 
    background-color: #F1F1F1;
 }
+
 /* navbar */
 .navbar-default {
     background-color: #FFFFFF;
@@ -140,6 +140,7 @@ a.nontext /* used to override default properties of 'a' tag */
 .cads_footer_contact_me
 {
     /* margin-bottom: 100px;*/
+    max-height: 10px;
     text-align:center;
     color: #FFFFFF;
     border-radius: 10px;
@@ -197,8 +198,8 @@ a.nontext /* used to override default properties of 'a' tag */
 {
  	background-color: #204C86;   
     color: #FFFFFF;
-    padding: 2px;
-    border-width: 2px;
+    padding: 0px;
+    border-width: 0px;
     border-style: solid;
     border-color: #204C86;
 
@@ -239,7 +240,7 @@ a.nontext /* used to override default properties of 'a' tag */
 {
 	background-color: #B0C4DE;  
 	color: #FFFFFF;
-	padding: 15px;
+	padding: 10px;
 	
 	font-size: 17px;
 	font-weight: 400;
@@ -256,7 +257,7 @@ a.nontext /* used to override default properties of 'a' tag */
 	background-color: #204C86;  
 	color: #FFFFFF;
 	margin-left: -50;
-	padding: 15px;
+	padding: 10px;
 	font-size: 17px;
 	font-weight: 400;
 	border-radius: 20px;
@@ -267,7 +268,45 @@ a.nontext /* used to override default properties of 'a' tag */
 	font-family: '__Roboto_5';	
 
 }
+.cads_no_decoration
+{
+	text-decoration: none;
+}
+.cads_space_header
+{
+	background-color: #B0C4DE;  
+	color: #FFFFFF;
+	padding: 15px;
+	font-size: 17px;
+	border-radius:20px;
+	text-decoration: none;
+	border-color: #B0C4DE;  
+	font-weight: bold;
+	font-family: '__Roboto_5';	
+	text-align: center;
+}
 
+.cads_no_decoration a
+{
+	text-decoration: none;
+}
+
+.cads_space_header div a
+{
+	background-color: #B0C4DE;  
+	color: #FFFFFF;
+	font-size: 22px;
+	border-radius:20px;
+	padding: 15px;
+	font-weight: 400;
+	text-decoration: none;
+	border-color: #B0C4DE;  
+	font-family: '__Roboto_5';	
+	text-align: center;
+}
+.cads_space_header a:active {
+	text-decoration: none;
+}
 .cads_header_bold
 {
 	font-family: '__Roboto_5';
@@ -313,23 +352,50 @@ a.nontext /* used to override default properties of 'a' tag */
 .cads_bodytext
 {
    min-width: 350px;
-
-   margin-bottom:140px; 
-   padding: 30px;
+   margin-bottom:80px; 
+   padding-left: 40px;
+   padding-right: 20px;
    text-align: justify;
-   padding-bottom:  40px;
+   padding-bottom:  20px;
    font-family: '__Roboto_5';
 }
-.cads_headline
+.cads_headline_h1
 {
 	color: #204C86;
 	text-align: left;
 	font-family: '__Roboto_5';
 	font-size: 30px;
 	padding: 0px;
+	font-weight: bold;
+}
+.cads_headline_h2
+{
+	color: #204C86;
+	text-align: left;
+	font-family: '__Roboto_5';
+	font-size: 24px;
+	padding: 0px;
 	font-weight: normal;
 }
+.cads_headline_h3
+{
+	color: #204C86;
+	text-align: left;
+	font-family: '__Roboto_5';
+	font-size: 18px;
+	padding: 0px;
+	font-weight: bold;
+}
 
+.cads_headline_h4
+{
+	color: #000000;
+	text-align: left;
+	font-family: '__Roboto_5';
+	font-size: 16px;
+	padding: 0px;
+	font-weight: bold;
+}
 .cads_greeting
 {
     color: #9EB247;
@@ -344,7 +410,20 @@ a.nontext /* used to override default properties of 'a' tag */
 	width: 320px;
 	padding-right: 80px;
 }
-
+.cads_goals_format
+{
+	
+}
+.cads_goals_format 
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+.cads_goals_format ul ul
+{
+	margin-left: 20px;
+	font-weight: normal;
+}
 .verticalspace
 {
 	clear: both;
@@ -352,11 +431,21 @@ a.nontext /* used to override default properties of 'a' tag */
 
 .cads_logo
 {
-	  margin-left:45px; 
+	  position: absolute;
+	  top: 70px;
+	  margin-left: 10%;
+	  z-index: 10001;
+}
+.cads_center
+{
+	text-align: center;
 }
 
-
-
+#cads_goals_text,
+#cads_member_text
+{
+	 display:none;
+}
 
 /* Some basic setups for the fonts */
 
