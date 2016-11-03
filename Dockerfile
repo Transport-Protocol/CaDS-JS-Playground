@@ -21,6 +21,7 @@ RUN apt-get install -y -q --no-install-recommends \
     git \
     make \
     nginx \
+    git \
     sudo \
     wget \
     && rm -rf /var/lib/apt/lists/* \
@@ -29,7 +30,7 @@ RUN apt-get install -y -q --no-install-recommends \
 ENV NVM_DIR /usr/local/nvm
 ENV NODE_VERSION 5.1.0
 
-# Install nvm with node and npm
+# Install nvm with node and nqpm
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash \
     && source $NVM_DIR/nvm.sh \
     && nvm install $NODE_VERSION \
@@ -46,19 +47,18 @@ WORKDIR ${appDir}
 
 # Add our package.json and install *before* adding our application files
 ADD package.json ./
-RUN npm i --production
 
-# Install pm2 so we can run our application
-RUN npm i -g pm2
+#Expose the port
+EXPOSE 8080
+
+RUN npm i --production
 
 RUN npm install
 
 # Add application files
 ADD . /var/www/app/current
 
-#Expose the port
-EXPOSE 8080
-
-CMD ["pm2", "start", "processes.json", "--no-daemon"]
+CMD ["cd", "/var/www/app/current" ]
+CMD ["npm", "start" ]
 
 # voila!

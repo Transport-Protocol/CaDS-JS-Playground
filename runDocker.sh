@@ -1,1 +1,2 @@
- docker run -p 80:80 scimbe/cads-hp-nodejs-app
+
+ docker run -p 8080:8080 scimbe/cads-hp-nodejs-app
