@@ -7,5 +7,5 @@
     "ip":   "0.0.0.0",
     "port": 8080
   },
-  "workspace": "/var/www/app/current/CaDS-JS-Playground"
+  "workspace": "/var/www/app/current"
 }
