@@ -7,3 +7,7 @@ kubectl delete deployment,service cads-hp
 kubectl run cads-hp --image=gcr.io/studious-tape-148319/cads-hp-nodejs-app  --port=80 --hostport=8080
 kubectl expose deployment cads-hp --type="LoadBalancer"
 kubectl get service cads-hp
+
+
+#Other Cloud 
+gcloud container clusters get-credentials $Cluster
