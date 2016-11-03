@@ -56,9 +56,6 @@ RUN npm install
 # Add application files
 ADD . /var/www/app/current
 
-# Install nvm with node and npm
-RUN git clone https://github.com/Transport-Protocol/CaDS-JS-Playground 
-
 #Expose the port
 EXPOSE 8080
 
