@@ -1,3 +1,9 @@
+
+On the origin host  
+ sudo ssh -L 0.0.0.0:443:localhost:443 becke@localhost
+ 
+In the docker Container 
+
 Add a lets encrypt certificate 
  sudo apt-get update
 Install editor
@@ -7,5 +13,5 @@ add the testing-repository to my sources.list:
  deb http://ftp2.de.debian.org/debian/ testing main
 and installed certbot from there:
  apt-get install python-certbot-apache -t testing
- 
-letsencrypt certonly --webroot   --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
+Create 
+ letsencrypt certonly --webroot   --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
