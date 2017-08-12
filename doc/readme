@@ -14,4 +14,9 @@ add the testing-repository to my sources.list:
 and installed certbot from there:
  apt-get install python-certbot-apache -t testing
 Create 
- letsencrypt certonly --webroot   --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
+ letsencrypt certonly --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
+ 
+Choose 2
+
+Renew if needed 
+ certbot renew (Think about cronjob)
