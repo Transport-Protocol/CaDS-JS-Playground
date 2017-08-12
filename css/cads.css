@@ -21,7 +21,7 @@ html
 body,div,dl,dt,dd,ul,ol,li,nav,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,a
 {
 	margin: 0;
-	padding: 0;
+	padding: -10px;
 	border-width: 0;
 	-webkit-transform-origin: left top;
 	-ms-transform-origin: left top;
