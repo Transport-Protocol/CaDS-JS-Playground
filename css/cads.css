@@ -14,14 +14,15 @@ body
 html
 {
 	min-height: 100%;
-	min-width: 100%;
+	min-width: 80%;
 	-ms-text-size-adjust: none;
 }
 
 body,div,dl,dt,dd,ul,ol,li,nav,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,a
 {
-	margin: 0;
-	padding: -10px;
+	margin-top: 0px;
+	padding: 0px;
+	margin-left: 0px;
 	border-width: 0;
 	-webkit-transform-origin: left top;
 	-ms-transform-origin: left top;
@@ -356,20 +357,23 @@ a.nontext /* used to override default properties of 'a' tag */
 {
 	min-width: 220px;
 	max-height: 280px;
-	height: auto;
-   	margin-top: -100px; 
-   	margin-bottom:10px;
+	width: 100%;
+    	margin: 0 auto;
+   	margin-top: -62px; 
+   	margin-bottom:-20px;
+	padding: 20px;
    	font-family: '__Roboto_5';	
 
 }
 .cads_bodytext
 {
    min-width: 350px;
-   margin-bottom:80px; 
-   padding-left: 0px;
-   padding-right: 20px;
+   margin-bottom:60px; 
+   margin-left: -60px; 
+   padding-left: 10%;
+   padding-right: 5%;
    text-align: justify;
-   padding-bottom:  20px;
+   padding-bottom:  10px;
    font-family: '__Roboto_5';
 }
 .cads_headline_h1
