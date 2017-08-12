@@ -20,3 +20,28 @@ Choose 2
 
 Renew if needed 
  certbot renew (Think about cronjob)
+ 
+Change server_config.json 
+ {
+  "http2":    true,
+  "https":    false,
+  "express":  false,
+  "ws":       false,
+  "server": {
+    "ip":   "0.0.0.0",
+    "port": 443
+  },
+  "workspace": "/var/www/app/current"
+ 
+}
+
+change key in lib/Spdy.js 
+
+ var options = {
+   key: fs.readFileSync('/etc/letsencrypt/live/cads.informatik.haw-hamburg.de/privkey.pem'),
+   cert: fs.readFileSync('/etc/letsencrypt/live/cads.informatik.haw-hamburg.de/fullchain.pem')
+ };
+
+docker kill hp
+docker start hp
+
