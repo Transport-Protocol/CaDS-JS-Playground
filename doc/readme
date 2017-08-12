@@ -1,0 +1,47 @@
+
+On the origin host  
+ sudo ssh -L 0.0.0.0:80:localhost:8080 -L 0.0.0.0:443:localhost:444 becke@localhost
+ 
+In the docker Container 
+
+Add a lets encrypt certificate 
+ sudo apt-get update
+Install editor
+ sudo apt-get install nano
+
+add the testing-repository to my sources.list:
+ deb http://ftp2.de.debian.org/debian/ testing main
+and installed certbot from there:
+ apt-get install python-certbot-apache -t testing
+Create 
+ letsencrypt certonly --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
+ 
+Choose 2
+
+Renew if needed 
+ certbot renew (Think about cronjob)
+ 
+Change server_config.json 
+ {
+  "http2":    true,
+  "https":    false,
+  "express":  false,
+  "ws":       false,
+  "server": {
+    "ip":   "0.0.0.0",
+    "port": 443
+  },
+  "workspace": "/var/www/app/current"
+ 
+}
+
+change key in lib/Spdy.js 
+
+ var options = {
+   key: fs.readFileSync('/etc/letsencrypt/live/cads.informatik.haw-hamburg.de/privkey.pem'),
+   cert: fs.readFileSync('/etc/letsencrypt/live/cads.informatik.haw-hamburg.de/fullchain.pem')
+ };
+
+docker kill hp
+docker start hp
+
