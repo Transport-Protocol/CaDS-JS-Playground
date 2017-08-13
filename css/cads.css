@@ -458,6 +458,9 @@ a.nontext /* used to override default properties of 'a' tag */
 	text-align: center;
 }
 
+#cads_address_text,
+#cads_map_text,
+#cads_way_text,
 #cads_arbeiten_text,
 #cads_unterlagen_text,
 #cads_talks_text,
