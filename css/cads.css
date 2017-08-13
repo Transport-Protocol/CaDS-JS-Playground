@@ -200,7 +200,7 @@ a.nontext /* used to override default properties of 'a' tag */
  	background-color: #204C86;   
     color: #FFFFFF;
     padding: 0px;
-    border-width: 0px;
+    border-width: 1px;
     border-style: solid;
     border-color: #204C86;
 
@@ -212,7 +212,6 @@ a.nontext /* used to override default properties of 'a' tag */
 	background-color: #204C86;  
 	border-color: #FFFFFF;
 	border-width: 2px:
- 	bottom:-10px;
 }
 
 
