@@ -1,13 +1,3 @@
-function cads_toggle_footer(){
-    /* global $ */
-    //If the HIDE class exists then remove it, But first hide DIV
-    if ( $("#cads_toggle_footer").hasClass('cads_hide') )
-        $("#cads_toggle_footer").hide().removeClass('cads_hide');
-    else if (! $("#cads_toggle_footer").hasClass('cads_hide') )
-        $("#cads_toggle_footer").hide().addClass('cads_hide');
-    $("#cads_toggle_footer").show();
-    console.log("Cads Footer menu toggled");
-}
 
 //###################### Twitter Workaround #######################
 // TODO : shoud be a directive 

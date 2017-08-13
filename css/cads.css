@@ -458,6 +458,8 @@ a.nontext /* used to override default properties of 'a' tag */
 	text-align: center;
 }
 
+#cads_arbeiten_text,
+#cads_unterlagen_text,
 #cads_talks_text,
 #cads_poster_text,
 #cads_standardi_text,
