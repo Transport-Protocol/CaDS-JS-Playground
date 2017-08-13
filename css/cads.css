@@ -198,20 +198,18 @@ a.nontext /* used to override default properties of 'a' tag */
 .cads_footer_text
 {
  	background-color: #204C86;   
-    color: #FFFFFF;
-    padding: 0px;
-    border-width: 1px;
+    color: #FFFFFF;   
     border-style: solid;
-    border-color: #204C86;
-
-    	 
+   
+    border-color: #FFFFFF;
+    border-bottom-width: 1px;	 
 }
 
 .cads_footer_text_down
 {
 	background-color: #204C86;  
 	border-color: #FFFFFF;
-	border-width: 2px:
+    border-top-width: 1px;
 }
 
 
@@ -227,6 +225,8 @@ a.nontext /* used to override default properties of 'a' tag */
 {
     display: none;
 	z-index:1000000;
+    border-width: 1px;
+    border-color: #FFFFFF;
 }
 
 .cads_footer_bold {
@@ -458,6 +458,12 @@ a.nontext /* used to override default properties of 'a' tag */
 	text-align: center;
 }
 
+#cads_iot_text,
+#cads_nephila_text,
+#cads_omnet_text,
+#cads_sctp_text,
+#cads_netperfmeter_text,
+#cads_homer_text,
 #cads_goals_text,
 #cads_member_text
 {
