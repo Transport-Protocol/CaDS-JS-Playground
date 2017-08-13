@@ -458,6 +458,12 @@ a.nontext /* used to override default properties of 'a' tag */
 	text-align: center;
 }
 
+#cads_talks_text,
+#cads_poster_text,
+#cads_standardi_text,
+#cads_conference_text,
+#cads_workshop_text,
+#cads_journal_text,
 #cads_iot_text,
 #cads_nephila_text,
 #cads_omnet_text,
