@@ -247,7 +247,6 @@ a.nontext /* used to override default properties of 'a' tag */
 	background-color: #B0C4DE;  
 	color: #FFFFFF;
 	padding: 10px;
-	
 	font-size: 17px;
 	font-weight: 400;
 	border-radius: 10px;
@@ -256,23 +255,25 @@ a.nontext /* used to override default properties of 'a' tag */
 	border-color: #204C86;  
 	font-weight: bold;
 	font-family: '__Roboto_5';	
+	padding-right: 95px;
 
 }
 .cads_facebook a:hover
 {
 	background-color: #204C86;  
 	color: #FFFFFF;
-	margin-left: -50;
+	margin-left: -40;
 	padding: 10px;
 	font-size: 17px;
 	font-weight: 400;
-	border-radius: 10px;
+	border-radius: 11px;
 	border-width: 50px;
 	border-color: #204C86;  
 	line-height: 22px;
 	text-decoration: none;
 	font-family: '__Roboto_5';
 	font-weight: bold;
+	padding-right: 95px;
 
 }
 .cads_no_decoration
@@ -424,8 +425,9 @@ a.nontext /* used to override default properties of 'a' tag */
 .cads_twitter_frame_space
 {
 	min-width: 200;
-	width: 320px;
+	width: 400px;
 	padding-right: 80px;
+ 	margin-left: -20px;
 }
 
 .cads_goals_format 
