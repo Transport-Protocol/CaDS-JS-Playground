@@ -14,7 +14,7 @@ body
 html
 {
 	min-height: 100%;
-	min-width: 80%;
+	min-width: 90%;
 	-ms-text-size-adjust: none;
 }
 
@@ -144,7 +144,6 @@ a.nontext /* used to override default properties of 'a' tag */
     max-height: 10px;
     text-align:center;
     color: #FFFFFF;
-    border-radius: 10px;
     border-bottom-color: #FFFFFF
     	
 }
@@ -152,14 +151,12 @@ a.nontext /* used to override default properties of 'a' tag */
 {
     color:#FFFFFF;
     text-decoration: none;
-    border-radius: 10px;
     border-bottom-color: #FFFFFF
 }
 .cads_footer_contact_me a:hover
 {
     color:#FFFFFF;
     text-decoration: none;
-    border-radius: 10px;
     border-bottom-color: #FFFFFF;
 }
 
@@ -169,7 +166,7 @@ a.nontext /* used to override default properties of 'a' tag */
     font-weight: bold;
     text-align: left;
     color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 8px;
     	
 }
 .cads_footer_impressum a
@@ -186,8 +183,8 @@ a.nontext /* used to override default properties of 'a' tag */
     /* margin-bottom: 100px;*/
     text-align:center;
     color: #FFFFFF;
-    border-radius: 10px;
-       padding: 10px;	
+
+    margin-bottom:  8px;	
 }
 
 .cads_footer_hide a:link
@@ -195,8 +192,7 @@ a.nontext /* used to override default properties of 'a' tag */
     color:#FFFFFF;
     text-align:center;
     text-decoration: none;
-    border-radius: 10px;
-    padding: 10px;
+
 }
 
 .cads_footer_text
@@ -224,8 +220,13 @@ a.nontext /* used to override default properties of 'a' tag */
     display: none !important;
 }
 
+#cads_toggle_footer_hide {
+    display: none;
+}
+
 #cads_toggle_footer
 {
+    display: none;
 	z-index:1000000;
 }
 
@@ -370,7 +371,7 @@ a.nontext /* used to override default properties of 'a' tag */
 {
    min-width: 350px;
    margin-bottom:60px; 
-   margin-left: -60px; 
+   margin-left: -40px; 
    padding-left: 10%;
    padding-right: 5%;
    text-align: justify;
