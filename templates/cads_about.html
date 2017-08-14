@@ -22,7 +22,7 @@
                 <td class="cads_full_sized">
 
                     <div class="cads_no_decoration">
-                        <a href="javascript:{$('#cads_goals_text').toggle();}; void(0);">
+                        <a href="javascript:{$('#cads_goals_text').toggle(500,function(){$('html, body').animate({scrollTop: ($('#cads_goals_text').offset().top)-200},500);});}; void(0);">
                             <div class="cads_full_sized">GOALS</div>
                         </a>
                     </div>
@@ -79,7 +79,7 @@
             <tr class="cads_space_header">
                 <td>
                     <div class="cads_no_decoration">
-                        <a href="javascript:{$('#cads_member_text').toggle();}; void(0);">
+                        <a href="javascript:{$('#cads_member_text').toggle(500,function(){$('html, body').animate({scrollTop: ($('#cads_member_text').offset().top)-200},500);});}; void(0);">
                             <div class="cads_full_sized">MEMBERS</div>
                         </a>
                     </div>

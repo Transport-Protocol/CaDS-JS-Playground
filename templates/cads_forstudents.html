@@ -12,7 +12,7 @@
                 <td class="cads_full_sized">
 
                     <div class="cads_no_decoration">
-                        <a href="javascript:{$('#cads_unterlagen_text').toggle(500);}; void(0);">
+                        <a href="javascript:{$('#cads_unterlagen_text').toggle(500,function(){$('html, body').animate({scrollTop: ($('#cads_unterlagen_text').offset().top)-200},500);});}; void(0);">
                             <div class="cads_full_sized">Informationen für Studenten</div>
                         </a>
                     </div>
@@ -61,7 +61,7 @@
                 <td class="cads_full_sized">
 
                     <div class="cads_no_decoration">
-                        <a href="javascript:{$('#cads_arbeiten_text').toggle(500);}; void(0);">
+                        <a href="javascript:{$('#cads_arbeiten_text').toggle(500,function(){$('html, body').animate({scrollTop: ($('#cads_arbeiten_text').offset().top)-200},500);});};void(0);">
                             <div class="cads_full_sized">Studentische Arbeiten</div>
                         </a>
                     </div>

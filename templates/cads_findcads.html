@@ -11,7 +11,7 @@
             <td class="cads_full_sized">
 
                 <div class="cads_no_decoration">
-                    <a href="javascript:{$('#cads_address_text').toggle(500);}; void(0);">
+                    <a href="javascript:{$('#cads_address_text').toggle(500,function(){$('html, body').animate({scrollTop: ($('#cads_address_text').offset().top)-200},500);});};void(0);">
                         <div class="cads_full_sized">Address</div>
                     </a>
                 </div>
@@ -48,7 +48,7 @@
             <td class="cads_full_sized">
 
                 <div class="cads_no_decoration">
-                    <a href="javascript:{$('#cads_map_text').toggle(500);}; void(0);">
+                    <a href="javascript:{$('#cads_map_text').toggle(500,function(){$('html, body').animate({scrollTop: ($('#cads_map_text').offset().top)-100},500);});}; void(0);">
                         <div class="cads_full_sized">MAP</div>
                     </a>
                 </div>
@@ -75,7 +75,7 @@
             <td class="cads_full_sized">
 
                 <div class="cads_no_decoration">
-                    <a href="javascript:{$('#cads_way_text').toggle(500);}; void(0);">
+                    <a href="javascript:{$('#cads_way_text').toggle(500,function(){$('html, body').animate({scrollTop: ($('#cads_way_text').offset().top)-200},500);});}; void(0);">
                         <div class="cads_full_sized">Find the way</div>
                     </a>
                 </div>
