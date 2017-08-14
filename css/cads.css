@@ -500,7 +500,7 @@ a.nontext /* used to override default properties of 'a' tag */
 .cads_teaser {
     font-size: 8px;
     text-align: center;
-    position: absolute;
+    position: fixed;
     top: 600px;
     left: 10%;
     transform: translate(-50%, -50%);
