@@ -43,6 +43,7 @@
     "systemjs": "0.19.39",
     "websocket": "latest",
     "helmet": "latest",
+    "helmet-csp": "latest",
     "zone.js": "^0.6.25"
   },
   "devDependencies": {
