@@ -12,9 +12,6 @@ export class Teaser implements OnInit{
 
   ngOnInit() {
     console.log("= Create teaser... =");
-    this.router.events.subscribe((evt) => {
- 
-  }
-
+   
  }
- 
+}
