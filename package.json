@@ -39,6 +39,7 @@
     "ngtweet": "0.6.1",
     
     "express": "latest",
+    "compression": "latest",
     "spdy": "latest",
     "websocket": "latest",
     "mongoose": "latest"
