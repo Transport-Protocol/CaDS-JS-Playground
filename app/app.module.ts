@@ -10,7 +10,8 @@ import { AppComponent }  from './app.component';
 import { Header } from './d.header';
 // footer 
 import { Footer } from './d.footer';
-
+// teaser 
+import { Teaser } from './d.teaser';
 // TGAS
 import {  CADS_TAG_MENU_ENTRY_SITE }  from './tag.menu_entry_site';
 
@@ -38,7 +39,7 @@ import {  CADS_Impressum }            from './d.impressum';
       { path: 'impressum',        component: CADS_Impressum},
     ],{ useHash: true })
     ],
-  declarations: [ AppComponent, Header, Footer, CADS_Welcome, CADS_About, 
+  declarations: [ AppComponent, Header, Footer, Teaser, CADS_Welcome, CADS_About, 
                   CADS_Projects, CADS_Publication, CADS_ForStudents, 
                   CADS_FindCads, CADS_Impressum, CADS_TAG_MENU_ENTRY_SITE ],
   bootstrap:    [ AppComponent ]

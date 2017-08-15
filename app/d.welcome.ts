@@ -10,6 +10,6 @@ export class CADS_Welcome implements OnInit{
 
   ngOnInit() {
     console.log("= Welcome Page loaded... =");
-      callTheTwitterFunction();
+    callTheTwitterFunction();
   }
 }
