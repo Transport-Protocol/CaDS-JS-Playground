@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-
+declare var $: any;
 @Component({
   selector: 'cads-header',
   templateUrl: '../templates/cads_header.html'
@@ -9,8 +9,9 @@ import { Router, NavigationEnd } from '@angular/router';
 
 export class Header implements OnInit{
   constructor(private router: Router) {}
-
+  
   ngOnInit() {
+    
     console.log("= Create header... =");
     this.router.events.subscribe((evt) => {
         if (!(evt instanceof NavigationEnd)) {
