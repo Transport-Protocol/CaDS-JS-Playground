@@ -2,6 +2,8 @@
 Update to the latest nodejs 6 (Important because nodejs has some TLS problems)
  curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
  sudo apt-get install -y nodejs
+ 
+ change start script to nodejs in  package.json
 
 On the origin host  
  sudo ssh -L 0.0.0.0:80:localhost:8080 -L 0.0.0.0:443:localhost:444 becke@localhost
