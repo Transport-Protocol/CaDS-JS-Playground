@@ -31,7 +31,7 @@ Change server_config.json
  {
   "http2":    true,
   "https":    false,
-  "express":  false,
+  "express":  true,
   "ws":       false,
   "server": {
     "ip":   "0.0.0.0",
