@@ -31,28 +31,29 @@
     "@angular/upgrade": "~2.1.1",
     "angular-in-memory-web-api": "~0.1.13",
     "bootstrap": "^3.3.7",
+    "compression": "latest",
     "core-js": "^2.4.1",
+    "express": "latest",
+    "helmet": "^3.8.1",
+    "mongoose": "latest",
+    "ngtweet": "0.6.1",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.4.2",
-    "systemjs": "0.19.39",
-    "zone.js": "^0.6.25",
-    "ngtweet": "0.6.1",
-    
-    "express": "latest",
-    "compression": "latest",
     "spdy": "latest",
+    "systemjs": "0.19.39",
     "websocket": "latest",
-    "mongoose": "latest"
+    "helmet": "latest",
+    "zone.js": "^0.6.25"
   },
-   "devDependencies": {
-    "tsd":  "latest",
+  "devDependencies": {
+    "tsd": "latest",
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
     "typescript": "^2.0.3"
   },
-    "ambientDependencies": {
+  "ambientDependencies": {
     "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"
   },
   "homepage": "https://github.com/Transport-Protocol/CaDS-JS-Playground#readme"
