@@ -21,6 +21,7 @@ RUN apt-get install -y -q --no-install-recommends \
     git \
     make \
     nginx \
+    nano \
     git \
     sudo \
     wget \
@@ -28,7 +29,18 @@ RUN apt-get install -y -q --no-install-recommends \
     && apt-get -y autoclean
 
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 5.1.0
+ENV NODE_VERSION 6.10.0
+
+RUN echo 'deb http://ftp2.de.debian.org/debian/ testing main' >> /etc/apt/sources.list
+RUN apt-get update \
+  && apt-get install -y python-certbot-apache -t testing \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/* \
+  && mkdir -p /etc/letsencrypt/live/cads.informatik.haw-hamburg.de \
+  && openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+    -keyout /etc/letsencrypt/live/cads.informatik.haw-hamburg.de/privkey.pem \
+    -out /etc/letsencrypt/live/cads.informatik.haw-hamburg.de/fullchain.pem \
+    -subj /CN=cads.informatik.haw-hamburg.de
 
 # Install nvm with node and nqpm
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash \
@@ -49,10 +61,12 @@ WORKDIR ${appDir}
 ADD package.json ./
 
 #Expose the port
+EXPOSE 443
 EXPOSE 8080
 
+# RUN letsencrypt certonly --standalone --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
 RUN npm i --production
-
+RUN apt-get -y upgrade 
 RUN npm install
 
 # Add application files
