@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-i
+
 @Component({
   selector: 'cads-teaser',
   templateUrl: '../templates/cads_teaser.html'
