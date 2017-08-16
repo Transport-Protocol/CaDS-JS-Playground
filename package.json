@@ -58,7 +58,7 @@
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-qunit": "latest",
     "grunt-contrib-watch": "latest",
-    "grunt-contrib-concat": "lates",
+    "grunt-contrib-concat": "latest",
     "typescript": "^2.0.3"
   },
   "ambientDependencies": {
