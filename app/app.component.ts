@@ -6,7 +6,7 @@ import { Component, NgZone, EventEmitter, OnInit } from '@angular/core';
   template: `
         <base href="/">
         <cads-header></cads-header>
-        <cads-teaser></cads-teaser>
+        <!-- cads-teaser></cads-teaser -->
         <router-outlet></router-outlet>
         <cads-footer></cads-footer>
     `,

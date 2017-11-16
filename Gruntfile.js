@@ -42,11 +42,13 @@ module.exports = function(grunt) {
           		'node_modules/rxjs/operator/catch.js': 'node_modules/rxjs/operator/catch.js',
           		'node_modules/rxjs/observable/ArrayObservable.js': 'node_modules/rxjs/observable/ArrayObservable.js',
           		'node_modules/rxjs/operator/map.js': 'node_modules/rxjs/operator/map.js',
-          		'node_modules/rxjs/operator/concatAll.js ': 'node_modules/rxjs/operator/concatAll.js ',
+          		'node_modules/rxjs/operator/concatAll.js': 'node_modules/rxjs/operator/concatAll.js',
           		'node_modules/rxjs/operator/mergeAll.js': 'node_modules/rxjs/operator/mergeAll.js',
           		'node_modules/rxjs/observable/EmptyObservable.js': 'node_modules/rxjs/observable/EmptyObservable.js',
-          		'node_modules/rxjs/Notification.js': 'cads.informatik.haw-hamburg.de/node_modules/rxjs/Notification.js',
+          		'node_modules/rxjs/Notification.js': 'node_modules/rxjs/Notification.js',
           		'node_modules/rxjs/observable/PromiseObservable.js': 'node_modules/rxjs/observable/PromiseObservable.js',
+          		'node_modules/ngtweet/dist/ngtweet.min.js': 'node_modules/ngtweet/dist/ngtweet.min.js',
+          		'node_modules/rxjs/operator/catch.js': 'node_modules/rxjs/operator/catch.js',
           		'node_modules/rxjs/operator/last.js': 'node_modules/rxjs/operator/last.js'
         		}
 		}
