@@ -34,17 +34,17 @@
     "compression": "latest",
     "core-js": "^2.4.1",
     "express": "latest",
-    "helmet": "^3.8.1",
+    "helmet": "latest",
+    "helmet-csp": "latest",
     "mongoose": "latest",
     "ngtweet": "0.6.1",
     "reflect-metadata": "^0.1.8",
-    "rxjs": "5.4.2",
+    "rxjs": "^5.0.0-rc.4",
     "spdy": "latest",
     "systemjs": "0.19.39",
+    "tsc": "^1.20150623.0",
     "websocket": "latest",
-    "helmet": "latest",
-    "helmet-csp": "latest",
-    "zone.js": "^0.6.25"
+    "zone.js": "^0.7.8"
   },
   "devDependencies": {
     "tsd": "latest",
