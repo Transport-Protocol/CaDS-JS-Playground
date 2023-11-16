@@ -1,12 +1,13 @@
 # Dockerfile
 # using debian:jessie for it's smaller size over ubuntu
-FROM debian:jessie
+FROM debian:bookworm
 
 # Replace shell with bash so we can source files
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # Set environment variables
 ENV appDir /var/www/app/current
+
 
 # Run updates and install deps
 RUN apt-get update
@@ -29,11 +30,11 @@ RUN apt-get install -y -q --no-install-recommends \
     && apt-get -y autoclean
 
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 6.10.0
+ENV NODE_VERSION 18.13.0
 
 RUN echo 'deb http://ftp2.de.debian.org/debian/ testing main' >> /etc/apt/sources.list
 RUN apt-get update \
-  && apt-get install -y python-certbot-apache -t testing \
+  && apt-get install -y python3-certbot-apache -t testing \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && mkdir -p /etc/letsencrypt/live/cads.informatik.haw-hamburg.de \
@@ -56,19 +57,21 @@ ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 # Set the work directory
 RUN mkdir -p /var/www/app/current
 WORKDIR ${appDir}
-
+RUN cd /var/www/app/current
 # Add our package.json and install *before* adding our application files
 ADD package.json ./
 
 #Expose the port
 EXPOSE 443
 EXPOSE 8080
-
+EXPOSE 80
 # RUN letsencrypt certonly --standalone --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
-RUN npm i --production
+#RUN npm install -g tsd
+RUN npm i --omit=dev
 RUN apt-get -y upgrade 
 RUN npm install
-
+RUN npm uninstall tsc
+RUN npm install -D typescript
 # Add application files
 ADD . /var/www/app/current
 
