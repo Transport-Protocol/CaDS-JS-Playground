@@ -60,9 +60,10 @@ ADD package.json ./
 EXPOSE 443 80 8080
 # RUN letsencrypt certonly --standalone --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
 #RUN npm install -g tsd
+RUN npm update tsd -g
 RUN npm i --omit=dev
 RUN apt-get -y upgrade 
-RUN npm install
+# RUN npm install
 RUN npm uninstall tsc
 RUN npm install -D typescript
 # Add application files

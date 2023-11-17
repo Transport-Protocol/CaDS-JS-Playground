@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"node start.js\" ",
+    "prepare": "tsd install angular2/angular2 angular2/router rx es6-promise",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
