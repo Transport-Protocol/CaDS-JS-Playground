@@ -36,12 +36,7 @@ RUN echo 'deb http://ftp2.de.debian.org/debian/ testing main' >> /etc/apt/source
 RUN apt-get update \
   && apt-get install -y python3-certbot-apache -t testing \
   && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* \
-  && mkdir -p /etc/letsencrypt/live/cads.informatik.haw-hamburg.de \
-  && openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-    -keyout /etc/letsencrypt/live/cads.informatik.haw-hamburg.de/privkey.pem \
-    -out /etc/letsencrypt/live/cads.informatik.haw-hamburg.de/fullchain.pem \
-    -subj /CN=cads.informatik.haw-hamburg.de
+  && rm -rf /var/lib/apt/lists/* 
 
 # Install nvm with node and nqpm
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash \
@@ -62,9 +57,7 @@ RUN cd /var/www/app/current
 ADD package.json ./
 
 #Expose the port
-EXPOSE 443
-EXPOSE 8080
-EXPOSE 80
+EXPOSE 443 80 8080
 # RUN letsencrypt certonly --standalone --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
 #RUN npm install -g tsd
 RUN npm i --omit=dev
@@ -74,7 +67,6 @@ RUN npm uninstall tsc
 RUN npm install -D typescript
 # Add application files
 ADD . /var/www/app/current
-
 CMD ["cd", "/var/www/app/current" ]
 CMD ["npm", "start" ]
 
