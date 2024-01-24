@@ -53,13 +53,14 @@ ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 RUN mkdir -p /var/www/app/current
 WORKDIR ${appDir}
 RUN cd /var/www/app/current
+RUN git checkout https://github.com/Transport-Protocol/CaDS-JS-Playground
 # Add our package.json and install *before* adding our application files
 ADD package.json ./
 
 #Expose the port
 EXPOSE 443 80 8080
 # RUN letsencrypt certonly --standalone --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
-#RUN npm install -g tsd
+RUN npm install -g tsd
 RUN npm update tsd -g
 RUN npm i --omit=dev
 RUN apt-get -y upgrade 
