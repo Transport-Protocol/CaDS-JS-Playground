@@ -66,6 +66,7 @@ RUN npm install -g tsd
 RUN npm uninstall tsc
 RUN npm install -D typescript
 RUN npm update tsd -g
+RUN tsd install angular2
 RUN tsd install angular2/angular2 angular2/router rx es6-promise
 #RUN npm install
 #RUN npm install -g npm
