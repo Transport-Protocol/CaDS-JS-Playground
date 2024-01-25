@@ -66,6 +66,7 @@ RUN npm install -g tsd
 RUN npm uninstall tsc
 RUN npm install -D typescript
 RUN npm update tsd -g
+RUN npm install
 #RUN npm install
 #RUN npm install -g npm
 #RUN npm i -g read-pkg
