@@ -63,17 +63,18 @@ EXPOSE 443 80 8080
 RUN rm -rf node_modules 
 RUN npm cache clean --force
 RUN npm install -g tsd
-RUN npm install
-#RUN npm install -g npm
+RUN npm uninstall tsc
+RUN npm install -D typescript
 RUN npm update tsd -g
-RUN npm i -g read-pkg
-RUN npm i -g read-pkg-up
-RUN npm i -g globby
+RUN tsd install angular2/angular2 angular2/router rx es6-promise
+#RUN npm install
+#RUN npm install -g npm
+#RUN npm i -g read-pkg
+#RUN npm i -g read-pkg-up
+#RUN npm i -g globby
 #RUN npm i --omit=dev
 RUN apt-get -y upgrade 
 # RUN npm install
-RUN npm uninstall tsc
-RUN npm install -D typescript
 # Add application files
 ADD . /var/www/app/current
 CMD ["cd", "/var/www/app/current" ]
