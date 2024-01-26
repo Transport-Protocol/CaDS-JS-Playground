@@ -2,7 +2,7 @@
     "apps": [
         {
             "name": "api",
-            "script": "./bin/www",
+            "script": "node start.js",
             "merge_logs": true,
             "max_restarts": 20,
             "instances": 4,

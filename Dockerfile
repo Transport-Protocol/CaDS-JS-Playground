@@ -60,13 +60,8 @@ ADD package.json ./
 #Expose the port
 EXPOSE 443 80 8080
 # RUN letsencrypt certonly --standalone --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
-RUN rm -rf node_modules 
-RUN npm cache clean --force
-RUN npm install -g tsd
-RUN npm uninstall tsc
-RUN npm install -D typescript
-RUN npm update tsd -g
-RUN npm install
+RUN npm install --production
+
 #RUN npm install
 #RUN npm install -g npm
 #RUN npm i -g read-pkg
