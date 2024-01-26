@@ -39,6 +39,8 @@
     "spdy": "latest",
     "systemjs": "0.19.39",
     "websocket": "latest",
+        "helmet": "latest",
+    "helmet-csp": "latest",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
