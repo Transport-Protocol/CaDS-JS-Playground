@@ -39,11 +39,11 @@
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "tsd": "latest",
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
+    "tsd": "^0.30.4",
     "typescript": "^2.0.3"
   },
   "ambientDependencies": {
