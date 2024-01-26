@@ -6,7 +6,6 @@
   "scripts": {
     "test": "tsc && concurrently \"tsc -w\" \"node start.js\" ",
     "start": "tsc && concurrently \"tsc -w\" \"node start.js\" ",
-    "prepare": "tsd install angular2/angular2 angular2/router rx es6-promise",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
@@ -39,6 +38,7 @@
     "core-js": "^2.4.1",
     "ie-shim": "^0.1.0",
     "reflect-metadata": "^0.1.9",
+    "rx": "^4.1.0",
     "rxjs": "5.0.1",
     "zone.js": "^0.8.4"
   },
