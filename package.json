@@ -22,7 +22,7 @@
   "dependencies": {
     "@angular/common": "~2.1.1",
     "@angular/compiler": "~2.1.1",
-    "@angular/core": "~2.1.1",
+    "@angular/core": "latest",
     "@angular/forms": "~2.1.1",
     "@angular/http": "~2.1.1",
     "@angular/platform-browser": "~2.1.1",
