@@ -39,7 +39,7 @@
     "mongoose": "latest",
     "ngtweet": "0.6.1",
     "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.0-rc.4",
+    "rxjs": "^5.5.12",
     "spdy": "latest",
     "systemjs": "0.19.39",
     "tsc": "^1.20150623.0",
