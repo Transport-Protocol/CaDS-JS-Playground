@@ -28,9 +28,9 @@ export class AppComponent  implements OnInit  {
   ngOnInit(): void {
 
     /* global callTheTwitterFunction*/
-     this.zone.runOutsideAngular(() => {
+    // this.zone.runOutsideAngular(() => {
            //  callTheTwitterFunction();
-    });
+    //});
 
   
 
