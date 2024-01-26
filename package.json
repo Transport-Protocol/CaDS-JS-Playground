@@ -19,26 +19,35 @@
     "url": "https://github.com/Transport-Protocol/CaDS-JS-Playground/issues"
   },
   "dependencies": {
-  "@angular/animations": "^6.0.3",
-     "@angular/common": "^6.0.3",
-     "@angular/compiler": "^6.0.3",
-     "@angular/core": "^6.0.3",
-     "@angular/forms": "^6.0.3",
-     "@angular/http": "^6.0.3",
-     "@angular/platform-browser": "^6.0.3",
-     "@angular/platform-browser-dynamic": "^6.0.3",
-     "@angular/router": "^6.0.3",
-      "core-js": "^2.5.4",
-      "rxjs": "6.0.0",
-      "zone.js": "^0.8.26"
+    "@angular/animations": "^6.0.3",
+    "@angular/common": "^6.0.3",
+    "@angular/compiler": "^6.0.3",
+    "@angular/core": "^6.0.3",
+    "@angular/forms": "^6.0.3",
+    "@angular/http": "^6.0.3",
+    "@angular/platform-browser": "^6.0.3",
+    "@angular/platform-browser-dynamic": "^6.0.3",
+    "@angular/router": "^6.0.3",
+    "@angular/upgrade": "^6.0.3",
+    "bootstrap": "^3.3.7",
+    "compression": "latest",
+    "core-js": "^2.5.4",
+    "express": "latest",
+    "mongoose": "latest",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.6.0-forward-compat.5",
+    "spdy": "latest",
+    "systemjs": "0.19.39",
+    "websocket": "latest",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
-    "@types/node": "^20.11.7",
+    "@types/node": "20.11.7",
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
     "tsd": "^0.30.4",
-    "typescript": "^2.0.3"
+    "typescript": "5.3"
   },
   "ambientDependencies": {
     "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"
