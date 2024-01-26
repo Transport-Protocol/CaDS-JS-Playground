@@ -19,28 +19,18 @@
     "url": "https://github.com/Transport-Protocol/CaDS-JS-Playground/issues"
   },
   "dependencies": {
-    "@angular/common": "~4.0.1",
-    "@angular/compiler": "~4.0.1",
-    "@angular/compiler-cli": "~4.0.1",
-    "@angular/core": "~4.0.1",
-    "@angular/forms": "~4.0.1",
-    "@angular/http": "~4.0.1",
-    "@angular/platform-browser": "~4.0.1",
-    "@angular/platform-browser-dynamic": "~4.0.1",
-    "@angular/platform-server": "~4.0.1",
-    "@angular/router": "~4.0.1",
-    "@angular/upgrade": "~4.0.1",
-    "@types/angular": "^1.8.9",
-    "@types/angular2": "^0.0.2",
-    "@types/es6-promise": "^3.3.0",
-    "@types/rx": "^4.1.4",
-    "angular-in-memory-web-api": "^0.3.1",
-    "core-js": "^2.4.1",
-    "ie-shim": "^0.1.0",
-    "reflect-metadata": "^0.1.9",
-    "rx": "^4.1.0",
-    "rxjs": "5.0.1",
-    "zone.js": "^0.8.4"
+  "@angular/animations": "^6.0.3",
+     "@angular/common": "^6.0.3",
+     "@angular/compiler": "^6.0.3",
+     "@angular/core": "^6.0.3",
+     "@angular/forms": "^6.0.3",
+     "@angular/http": "^6.0.3",
+     "@angular/platform-browser": "^6.0.3",
+     "@angular/platform-browser-dynamic": "^6.0.3",
+     "@angular/router": "^6.0.3",
+      "core-js": "^2.5.4",
+      "rxjs": "6.0.0",
+      "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
@@ -48,7 +38,7 @@
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
     "tsd": "^0.30.4",
-    "typescript": "^2.9.2"
+    "typescript": "^2.7.2"
   },
   "ambientDependencies": {
     "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"
