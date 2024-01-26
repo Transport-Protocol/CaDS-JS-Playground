@@ -31,6 +31,10 @@
     "@angular/platform-server": "~4.0.1",
     "@angular/router": "~4.0.1",
     "@angular/upgrade": "~4.0.1",
+    "@types/angular": "^1.8.9",
+    "@types/angular2": "^0.0.2",
+    "@types/es6-promise": "^3.3.0",
+    "@types/rx": "^4.1.4",
     "angular-in-memory-web-api": "^0.3.1",
     "core-js": "^2.4.1",
     "ie-shim": "^0.1.0",
@@ -39,12 +43,12 @@
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@types/core-js": "^0.9.34",
-    "@types/node": "^6.0.45",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.7",
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
     "tsd": "^0.30.4",
-    "typescript": "^2.0.3"
+    "typescript": "^2.9.2"
   },
   "ambientDependencies": {
     "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"
