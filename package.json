@@ -38,7 +38,7 @@
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
     "tsd": "^0.30.4",
-    "typescript": "^2.7.2"
+    "typescript": "^2.0.3"
   },
   "ambientDependencies": {
     "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"
