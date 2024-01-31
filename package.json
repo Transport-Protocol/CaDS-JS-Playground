@@ -37,8 +37,9 @@
     "mongoose": "latest",
     "reflect-metadata": "^0.1.8",
     "rxjs": "latest",
+    "rxjs-compat": "^6.6.7",
     "spdy": "latest",
-    "systemjs": "latest",
+    "systemjs": "v0.19.39",
     "websocket": "latest",
     "zone.js": "^0.11.03"
   },
