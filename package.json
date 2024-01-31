@@ -19,16 +19,16 @@
     "url": "https://github.com/Transport-Protocol/CaDS-JS-Playground/issues"
   },
   "dependencies": {
-    "@angular/animations": "^6.0.3",
-    "@angular/common": "^6.0.3",
-    "@angular/compiler": "^6.0.3",
-    "@angular/core": "^6.0.3",
-    "@angular/forms": "^6.0.3",
-    "@angular/http": "^6.0.3",
-    "@angular/platform-browser": "^6.0.3",
-    "@angular/platform-browser-dynamic": "^6.0.3",
-    "@angular/router": "^6.0.3",
-    "@angular/upgrade": "^6.0.3",
+    "@angular/animations": "^11.2.14",
+    "@angular/common": "^11.2.14",
+    "@angular/compiler": "^11.2.14",
+    "@angular/core": "^11.2.14",
+    "@angular/forms": "^11.2.14",
+    "@angular/http": "latest",
+    "@angular/platform-browser": "^11.2.14",
+    "@angular/platform-browser-dynamic": "^11.2.14",
+    "@angular/router": "^11.2.14",
+    "@angular/upgrade": "^11.2.14",
     "bootstrap": "^3.3.7",
     "compression": "latest",
     "core-js": "^2.5.4",
@@ -41,7 +41,7 @@
     "spdy": "latest",
     "systemjs": "latest",
     "websocket": "latest",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.11.03"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
