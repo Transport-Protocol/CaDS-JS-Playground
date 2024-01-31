@@ -4,8 +4,8 @@
   "description": "Playground Project",
   "main": "start.js",
   "scripts": {
-    "test": "tsc && concurrently \"tsc -w\" \"node start.js\" ",
-    "start": "tsc && concurrently \"tsc -w\" \"node start.js\" ",
+    "test": "concurrently \"tsc -w\" \"node start.js\" ",
+    "start": "concurrently \"tsc -w\" \"node start.js\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
