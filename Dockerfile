@@ -64,8 +64,7 @@ RUN npm install -g tsd
 RUN npm install typescript -g
 RUN npm install -g @angular/cli
 RUN npm install --save rxjs-compat
-RUN npm install @angular/http
-RUN npm install --production
+RUN npm install 
 RUN apt-get -y upgrade 
 #RUN npm uninstall tsc
 #RUN npm install -D typescript
