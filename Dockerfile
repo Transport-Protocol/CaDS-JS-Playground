@@ -77,5 +77,5 @@ RUN apt-get -y upgrade
 # RUN npm install
 # Add application files
 #RUN npm start
-
+CMD ["npm", "start"]
 # voila!
