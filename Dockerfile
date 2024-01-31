@@ -58,10 +58,11 @@ RUN git clone https://github.com/Transport-Protocol/CaDS-JS-Playground
 ADD package.json ./
 
 #Expose the port
-EXPOSE 443 80 8080
+EXPOSE 443 
 # RUN letsencrypt certonly --standalone --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
 RUN npm install -g tsd
 RUN npm install typescript -g
+RUN npm install -g typings
 RUN npm install -g @angular/cli@latest
 RUN npm install -g rxjs
 
