@@ -33,14 +33,14 @@
     "compression": "latest",
     "core-js": "^2.5.4",
     "express": "latest",
+    "helmet": "latest",
+    "helmet-csp": "latest",
     "mongoose": "latest",
     "reflect-metadata": "^0.1.8",
-    "rxjs": "7.8.1",
+    "rxjs": "latest",
     "spdy": "latest",
-    "systemjs": "0.19.39",
+    "systemjs": "latest",
     "websocket": "latest",
-        "helmet": "latest",
-    "helmet-csp": "latest",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
@@ -54,5 +54,6 @@
   "ambientDependencies": {
     "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"
   },
+
   "homepage": "https://github.com/Transport-Protocol/CaDS-JS-Playground#readme"
 }
