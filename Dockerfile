@@ -6,7 +6,6 @@ FROM debian:bookworm
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # Set environment variables
-ENV appDir /var/www/app/current
 
 
 # Run updates and install deps
@@ -28,7 +27,7 @@ RUN apt-get install -y -q --no-install-recommends \
     wget \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get -y autoclean
-
+ENV appDir /var/www/app/current
 ENV NVM_DIR /usr/local/nvm
 ENV NODE_VERSION 18.13.0
 
@@ -53,25 +52,25 @@ ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 RUN mkdir -p /var/www/app/
 RUN git clone https://github.com/Transport-Protocol/CaDS-JS-Playground /var/www/app/current
 RUN cd /var/www/app/current
+RUN ls -la
 WORKDIR ${appDir}
 
 # Add our package.json and install *before* adding our application files
-ADD package.json ./
+#ADD package.json ./
 #Expose the port
 EXPOSE 443 
 # RUN letsencrypt certonly --standalone --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
 #ADD . /var/www/app/current
 #CMD ["cd", "/var/www/app/current" ]
 
+RUN npm install 
 RUN npm install -g tsd
 RUN npm install typescript -g
-RUN npm install -g typings
+
 RUN npm install -g @angular/cli@latest
-RUN npm install -g rxjs
-RUN npm install concurrently
-RUN npm install -g rxjs-compat
-RUN npm install 
-RUN apt-get -y upgrade 
+#RUN npm install -g rxjs
+#RUN npm install -g rxjs-compat
+#RUN apt-get -y upgrade 
 #RUN npm uninstall tsc
 # RUN npm install
 # Add application files
