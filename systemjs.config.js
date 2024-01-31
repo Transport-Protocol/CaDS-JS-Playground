@@ -29,7 +29,6 @@
       app: {
         main: './main.js',
         defaultExtension: 'js'
-        }
       },
       rxjs: {
        main: 'index.js', 
@@ -38,7 +37,7 @@
       'rxjs/operators': {
         main: 'index.js', 
         defaultExtension: 'js'
-      },
+      }
     }
   });
 })(this);

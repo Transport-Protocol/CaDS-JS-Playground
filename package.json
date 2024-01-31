@@ -41,7 +41,7 @@
     "spdy": "latest",
     "systemjs": "v0.19.39",
     "websocket": "latest",
-    "zone.js": "^0.11.03"
+    "zone.js": "latest"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
