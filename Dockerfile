@@ -68,7 +68,7 @@ RUN npm install typescript -g
 RUN npm install -g typings
 RUN npm install -g @angular/cli@latest
 RUN npm install -g rxjs
-
+RUN npm install concurrently
 RUN npm install -g rxjs-compat
 RUN npm install 
 RUN apt-get -y upgrade 
