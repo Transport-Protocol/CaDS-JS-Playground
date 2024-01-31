@@ -73,7 +73,7 @@ RUN npm install -g rxjs-compat
 RUN npm install 
 RUN apt-get -y upgrade 
 #RUN npm uninstall tsc
-#RUN npm install -D typescript
+RUN npm install -D typescript
 # RUN npm install
 # Add application files
 #RUN npm start
