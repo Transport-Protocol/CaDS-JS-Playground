@@ -76,6 +76,6 @@ RUN apt-get -y upgrade
 #RUN npm install -D typescript
 # RUN npm install
 # Add application files
-CMD ["npm", "start" ]
+RUN npm start
 
 # voila!
