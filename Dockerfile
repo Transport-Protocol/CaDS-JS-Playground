@@ -60,6 +60,9 @@ ADD package.json ./
 #Expose the port
 EXPOSE 443 
 # RUN letsencrypt certonly --standalone --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
+ADD . /var/www/app/current
+CMD ["cd", "/var/www/app/current" ]
+
 RUN npm install -g tsd
 RUN npm install typescript -g
 RUN npm install -g typings
@@ -73,8 +76,6 @@ RUN apt-get -y upgrade
 #RUN npm install -D typescript
 # RUN npm install
 # Add application files
-ADD . /var/www/app/current
-CMD ["cd", "/var/www/app/current" ]
 CMD ["npm", "start" ]
 
 # voila!
