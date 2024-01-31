@@ -43,8 +43,7 @@
       'rxjs/operators': {
         main: 'index.js', 
         defaultExtension: 'js'
-      },
-
+      }
     }
   });
 })(this);
