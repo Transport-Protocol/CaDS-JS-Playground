@@ -50,13 +50,13 @@ ENV NODE_PATH $NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules
 ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 # Set the work directory
-RUN mkdir -p /var/www/app/current
-WORKDIR ${appDir}
+RUN mkdir -p /var/www/app/
+RUN git clone https://github.com/Transport-Protocol/CaDS-JS-Playground /var/www/app/current
 RUN cd /var/www/app/current
-RUN git clone https://github.com/Transport-Protocol/CaDS-JS-Playground
+WORKDIR ${appDir}
+
 # Add our package.json and install *before* adding our application files
 ADD package.json ./
-
 #Expose the port
 EXPOSE 443 
 # RUN letsencrypt certonly --standalone --email martin.becke@haw-hamburg.de --agree-tos   -w /var/www/app/current/ -d cads.informatik.haw-hamburg.de
@@ -73,7 +73,6 @@ RUN npm install -g rxjs-compat
 RUN npm install 
 RUN apt-get -y upgrade 
 #RUN npm uninstall tsc
-RUN npm install -D typescript
 # RUN npm install
 # Add application files
 #RUN npm start
